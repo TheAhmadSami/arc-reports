@@ -107,7 +107,7 @@ const App = () => {
 
   return (
     <div className='relative w-full h-full overflow-x-hidden overflow-y-auto p-6 bg-[#221AFB] pe-6'>
-      <div className=' w-6 h-[1000px] z-50 absolute top-0 end-0 bg-white'></div>
+      {/* <div className=' w-6 h-[1000px] z-50 absolute top-0 end-0 bg-white'></div> */}
 
       <div className='rounded-s-2xl rounded-b-2xl overflow-hidden bg-[#F7F7F7]'>
         {/* HEADER */}
@@ -138,7 +138,7 @@ const App = () => {
           </div>
         </div>
 
-        <div className='flex flex-col gap-8 pt-20 px-10 pb-96'>
+        <div className='flex flex-col gap-8 pt-20 px-10 pb-[100rem]'>
           {/* USER CARD */}
           <div className='flex justify-between items-start bg-white p-6 rounded-xl'>
             {/* USER NAME */}
@@ -154,7 +154,7 @@ const App = () => {
             {/* USER INFO */}
             <div className='mt-4'>
               {data?.userInfo?.data?.map((item, indx) => (
-                <div key={indx} className='flex items-center gap-2'>
+                <div key={indx} className='flex items-center justify-between gap-16'>
                   <p> {item?.label}:</p>
                   <p> {item?.value}</p>
                 </div>
